@@ -18,4 +18,9 @@
   <project name="ivanmeler/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" />
   <remove-project name="CyanogenMod/android_hardware_samsung" />
   <project name="ivanmeler/android_hardware_samsung" path="hardware/samsung" remote="github" />
+  
+  <project name="ivanmeler/android_device_samsung_lt01-common" path="device/samsung/lt01-common" remote="github" />
+  <project name="ivanmeler/android_device_samsung_lt013g" path="device/samsung/lt013g" remote="github" />
+  <project name="ivanmeler/android_kernel_samsung_lt0" path="kernel/samsung/lt0" remote="github" />
+  
 </manifest>
