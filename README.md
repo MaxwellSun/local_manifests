@@ -1,5 +1,3 @@
-local_manifest
+Belive me you dont need this
 ==============
-GT-N7100
-
-This goes in /android/system/.repo/local_manifests/roomservice.xml
+Ignore me
