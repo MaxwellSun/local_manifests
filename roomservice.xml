@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remove-project name="omnirom/android_frameworks_av" />
-  <project name="ivanmeler/android_frameworks_av-1" path="frameworks/av" remote="private" />
-  <remove-project name="omnirom/android_frameworks_native" />
-  <project name="ivanmeler/android_frameworks_native-1" path="frameworks/native" remote="private" />
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
+
+  <remove-project path="frameworks/av" name="android_frameworks_av" />
+  <project name="ivanmeler/android_frameworks_av-1" path="frameworks/av" remote="private" revision="android-5.1"/>
+  <remove-project path="frameworks/native" name="android_frameworks_native"/>
+  <project name="ivanmeler/android_frameworks_native-1" path="frameworks/native" remote="private" revision="android-5.1"/>
   <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" revision="cm-12.0"/>
-  <project name="ivanmeler/proprietary_vendor_samsung" path="vendor/samsung" remote="private" />
-  <project name="ivanmeler/android_device_samsung_n7100" path="device/samsung/n7100" remote="private" />
-  <project name="ivanmeler/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="private" />
-  <project name="ivanmeler/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="private" />
-  <project name="ivanmeler/android_hardware_samsung" path="hardware/samsung" remote="private" />
+  <project name="ivanmeler/proprietary_vendor_samsung" path="vendor/samsung" remote="private" revision="android-5.1"/>
+  <project name="ivanmeler/android_device_samsung_n7100" path="device/samsung/n7100" remote="private" revision="android-5.1"/>
+  <project name="ivanmeler/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="private" revision="android-5.1"/>
+  <project name="ivanmeler/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="private" revision="android-5.1"/>
+  <project name="ivanmeler/android_hardware_samsung" path="hardware/samsung" remote="private" revision="android-5.1"/>
 </manifest>
