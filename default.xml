@@ -2,21 +2,13 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com"
-           revision="refs/tags/android-5.1.0_r3" />
-
-  <remote  name="github"
-           fetch=".."
-           review="review.cyanogenmod.org" />
-
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
-
-  <default revision="refs/heads/staging/cm-12.1"
-           remote="github"
-           sync-c="true"
+           fetch=".." />
+  <default revision="refs/tags/android-5.1.0_r3"
+           remote="aosp"
            sync-j="4" />
 
-  <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
+  <project path="build" name="platform/build" groups="pdk,tradefed" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="bionic" name="platform/bionic" groups="pdk" />
 </manifest>
